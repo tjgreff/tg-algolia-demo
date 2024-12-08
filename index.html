@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link href="https://fonts.googleapis.com/css?family=Sora" rel="stylesheet" type="text/css">
+
+  <link rel="shortcut icon" href="dist/icons8-chef-50.png">
+
+  <!--
+    Do not use @8 in production, use a complete version like x.x.x, see website for latest version:
+    https://www.algolia.com/doc/guides/building-search-ui/installation/js/#load-the-styles
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./src/app.css">
+
+  <title>Tyler Greff | Demo </title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="algolia_logo.png" alt="logo" class="logo">
+    <h1 class="header-title">Farm to Data</h1>
+    <p class="header-subtitle">New Recipes for the Home Cook</p>
+  </header>
+  <!-- Site Disclaimer - How to use the page -->
+  <div class="text">
+    <p>Use the search bar and applicable filters to find new recipes to spice up your day-to-day menu.
+      This site contains thousands of recipes for every type of homecook and time constraint.
+      Search by the ingredients you have on hand - or want to try for the first time.
+      Filter by the level of difficulty or sort by time (feature coming!) to find a recipe that works best for your schedule and abilities.</p>
+  </div>
+<!-- Left-hand Menu -->
+  <div class="container">
+    <div class="search-panel">
+      <div class="search-panel__filters">
+        <div id="difficulty-list"></div>
+        <div id="category-list"></div>
+        <div id="rating-menu"></div>
+        <div id="range-slider"></div>
+        <div id="clear-refinements"></div>
+      </div>
+<!-- Search Results -->
+      <div class="search-panel__results">
+        <div id="searchbox"></div>
+        <div id="stats"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+        <div id="hits-per-page"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.5"></script>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>

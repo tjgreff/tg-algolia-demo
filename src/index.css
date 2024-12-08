@@ -1,0 +1,19 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sora', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.logo {
+  height: 3.5rem;
+  margin-right: 2rem;
+}
+
+.text {
+  margin: 1rem 5% 0 8%;
+}

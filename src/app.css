@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0.5rem 1rem;
+  background-color: #d6d6e7;
+  color: #003dff;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.header-title::after {
+  content: ' ▸ ';
+  padding: 0 0.5rem;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#stats {
+  margin-bottom: 1rem;
+  font-size: 10px;
+  text-align: right;
+}
+
+.search-panel {
+  display: flex;
+}
+
+.search-panel__filters {
+  flex: 1;
+}
+
+.search-panel__results {
+  flex: 3;
+}
+
+.ais-Highlight-highlighted {
+  color: inherit;
+  font-size: inherit;
+}
+
+#searchbox {
+  margin-bottom: 2rem;
+}
+
+#range-slider {
+  padding-right: 5rem;
+}
+
+#clear-refinements {
+  margin-top: 5rem;
+  max-width: 75%;
+
+}
+
+#pagination {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.ais-Hits-item article {
+  display: flex;
+}
+
+.ais-Hits-item img {
+  max-height: 125px;
+  padding-right: 16px;
+}
+
+#rating-menu .ais-RatingMenu-item--selected {
+  font-weight: bold;      /* Make it bold */
+  text-decoration: underline; /* Underline the selected item */
+}
