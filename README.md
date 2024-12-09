@@ -8,6 +8,8 @@ This search page is intended to help everyday homecooks find new and different r
 
 The returned information includes the recipe name, a few of the nutritional facts (only 5 to limit the size of each result), the full recipe URL, and the cook times. This information is highly valued to the everyday cook as many prioritize time and then health factors when selecting a recipe. Seeing both the prep and cook time, as well as the nutritional value and servings, helps the user make a faster and more informed decision on which recipe they will ultimately use.
 
+[Please access my search page - Farm to Data - here.](https://tjgreff.github.io/tg-algolia-demo/)
+
 ## Modifying the dataset
 
 To craft a better search experience for the end user I adjusted some of the existing data and added a new field. First, I used the existing 'cuisine_path' attribute and broke this down using the '/' character as a delimiter. This allowed me to break up the single attribute into 'Category', 'subCategory1', 'subCategory2', and 'subCategory3'. I used the first two attributes in the facet filtering on the left menu.
