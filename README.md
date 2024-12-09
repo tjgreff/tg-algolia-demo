@@ -42,10 +42,19 @@ Cheers, George
 
 Hi George,
 
-...
+Thanks for reaching out - I'd be happy to help you better understand the world of search engines and how these concepts relate to the Algolia Platform.
+
+Let's start with records. A single ['record'](https://www.algolia.com/doc/guides/sending-and-managing-data/prepare-your-data/#algolia-records) is a data entry that contains a set of defined attributes. If we think of a phonebook, a record will be each individual entry. The entry will always have attributes like the name, address, and phone number of each person.
+
+In this same example, the collection of persons' records - the phonebook - is an '[index'](https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/how-to/importing-from-the-dashboard/#create-a-new-index) in Algolia. An index, or a container for a set of records that can be searched together, is similar to a table in database. The major difference is that an index, in Algolia, is designed to enhance the searchability and discoverability of each record. When we say 'indexing', we mean that we are configuring the set of records to be searched on a webpage.
+
+Regarding the core metrics and use of (Custom Rankings)[https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/#algolias-ranking-strategy] - this is going to be heavily dependent on your specific use-case with Algolia. The idea behind Custom Rankings is that each business will have a different set of attributes they consider to be crucial to operations. While we do provided a set of predefined attribute rankings to influence results, this may not always work for you. A marketplace that is looking to encourage fair competition amongst many sellers, while providing the customer with the best experience possible, may look to use customer ratings as a core indicator. In this case, we would configure the 'rating' attribute to be considered in the Custom Ranking.
+
+Let me know if you want to hop on a call and discuss this further. Search is a beast of a topic and we're hear to help you navigate it.
 
 Cheers,
 Tyler
+
 
 ### Question 2
 
@@ -59,16 +68,21 @@ Regards, Matt
 
 Hi Matt,
 
-...
+I'm sorry to hear that the latest dashboard launch isn't delivering the value we intended it to, but I really appreciate you letting me know about this issue.
+
+I've forwarded this feedback to my manager as well as the product team. We will review this internally as a team and get back to you in the next few days with more information and a plan of attack to rectify the issue. Thanks for your patience as we look into this and find a proper resolution.
 
 Cheers,
 Tyler
+
+*Clarification - In this scenario I deemed it best to 'escalate' the issue and look for feedback rather than immediate problem solving. It's just as possible that the user misunderstands the new feature as it is that there is a proper UX bug. Feedback from the team responsible for the product will help us better understand where the issue really lies.*
+
 
 ### Question 3
 
 Hi,
 
-I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
+I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high-level process look like?
 
 Regards, Leo
 
@@ -76,7 +90,32 @@ Regards, Leo
 
 Hi Leo,
 
-...
+This is great news! I'm glad to hear you want to move forward with Algolia.
+
+The 5000-feet view of the integration looks something like:
+1. Review and sanitize data for import into Algolia
+2. Import data and configure the index/indices as required
+3. Build the Search UI in your existing experience and connect it to Algolia
+4. Walk through the [Implementation Checklist](https://www.algolia.com/doc/guides/going-to-production/implementation-checklist/) prior to go-live
+5. Launch and profit!
+
+There are a few different ways that we can tackle the Algolia integration into your existing site. There are typically two common paths that our customers take - either doing the development themselves or hiring an implementation partner. There are a few things to consider for each path - here's a quick breakdown of some things to consider:
+
+**Internal Development**
+- How big is the internal dev and/or IT team that will complete the work?
+- Does the team have bandwidth to complete the project on-schedule?
+- What is the team's technical background? What languages are they familiar with? Have they worked with APIs before?
+
+While the cost of this approach will be lower than hiring an SI partner, Customer Success hours will be required from Algolia to oversee the integration and ensure its success. It is crucial to have an experienced team involved as there are many platform features that must be considered.
+
+**Integration Partner**
+- What is the budget for the project?
+- Do you require work outside of the core integration? (i.e.: site redesign, data analytics)
+- Does the hired team align with your business culture and goals? Do they understand the intended value for implementing Algolia?
+
+[Here](https://partners.algolia.com/directory) is a link to our partner directory so you can browse and see what firms have experience integrating into your existing platform. We would be happy to provide you with direct introductions and recommendations of a few partners we believe are best suited for this project.
+
+Let me know your thoughts and how you might want to proceed. I'm always available for a call as well to discuss this further.
 
 Cheers,
 Tyler
